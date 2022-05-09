@@ -18,7 +18,12 @@ async function run() {
   }
 
   const randomPos = Math.round(Math.random() * 1000);
-  const url = `https://api.tenor.com/v1/search?q=${encodeURIComponent(searchTerm)}&pos=${randomPos}&limit=1&media_filter=minimal&contentfilter=low`
+  const url = `https://api.tenor.com/v1/search?q=${encodeURIComponent(searchTerm)}&pos=${randomPos}&limit=1&media_filter=basic&contentfilter=low`
+
+  // https://tenor.com/gifapi/documentation#endpoints-search
+  // minimal - tinygif, gif, and mp4.
+  // basic - nanomp4, tinygif, tinymp4, gif, mp4, and nanogif
+  // (values: off | low | medium | high) specify the content safety filter level
 
   console.log(`Searching Tenor: ${url}`)
 
