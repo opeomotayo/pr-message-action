@@ -1,0 +1,14 @@
+name: Test PR message
+
+on:
+  pull_request:
+    types: [opened, edited, reopened]
+
+jobs:
+  pr-message:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: opeomotayo/pr-message-action@master
+        with:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          TENOR_TOKEN: ${{secrets.TENOR_TOKEN}}
