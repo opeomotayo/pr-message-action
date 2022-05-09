@@ -1,0 +1,27 @@
+{
+  "name": "demo-action-pull-request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opeomotayo/thank-you-custom-github-action.git"
+  },
+  "author": "Ope Omotayo <hello@opeomotayo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opeomotayo/thank-you-custom-github-action/issues"
+  },
+  "homepage": "https://github.com/opeomotayo/thank-you-custom-github-action#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@vercel/ncc": "^0.27.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
+  }
+}
