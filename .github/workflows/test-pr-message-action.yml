@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github./actions/pr-message #opeomotayo/pr-message-action@master
+      - uses: ./.github./actions/pr-message-action #opeomotayo/pr-message-action@master
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           TENOR_TOKEN: ${{secrets.TENOR_TOKEN}}
