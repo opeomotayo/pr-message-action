@@ -6,14 +6,14 @@ Say thanks any time someone makes a new Pull Request on your repository!
 * Create a [Tenor API](https://tenor.com/gifapi/documentation) key and set it as a [Secret](https://docs.github.com/en/actions/reference/encrypted-secrets) on your GitHub repo
 * Add a new GitHub Action workflow:
 ```
-name: Thank You
+name: PR message
 
 on:
   pull_request:
     types: [opened, edited, reopened]
 
 jobs:
-  thanks:
+  pr-message:
     runs-on: ubuntu-latest
     steps:
       - uses: opeomotayo/thank-you-action@master
