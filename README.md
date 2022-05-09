@@ -16,7 +16,7 @@ jobs:
   pr-message:
     runs-on: ubuntu-latest
     steps:
-      - uses: opeomotayo/thank-you-action@master
+      - uses: opeomotayo/pr-message-action@master
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           TENOR_TOKEN: ${{secrets.TENOR_TOKEN}}
